@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormBuilder } from '@angular/forms';
-// mport { KngInputValidator } from '../shared';
+import { KngInputValidator, KngControlMessagesComponent } from '../shared';
 
 
 @Component({
@@ -17,9 +17,9 @@ export class KngUserComponent implements OnInit {
   ) {
 
       this.sign = this.$fb.group({
-      email: ['', [Validators.required]],
-      password: ['', [Validators.required]]
-    });
+        'email': ['', [Validators.required, KngInputValidator.emailValidator]],
+        'password': ['', [Validators.required, KngInputValidator.passwordValidator]]
+      });
 
    }
 
