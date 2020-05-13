@@ -4,7 +4,7 @@ import {MdcButtonModule} from '@angular-mdc/web/button';
 import {MdcListModule} from '@angular-mdc/web/list';
 import {MdcTypographyModule} from '@angular-mdc/web/typography';
 import {MdcIconModule} from '@angular-mdc/web/icon';
-
+import {MdcTextFieldModule} from '@angular-mdc/web/textfield';
 
 @NgModule({
   exports: [
@@ -12,7 +12,10 @@ import {MdcIconModule} from '@angular-mdc/web/icon';
     MdcButtonModule,
     MdcTypographyModule,
     MdcListModule,
-    MdcIconModule
+    MdcIconModule,
+    MdcTextFieldModule
   ]
 })
-export class MaterialModule {}
+export class MaterialModule {
+
+}

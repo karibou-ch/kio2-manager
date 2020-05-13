@@ -1,0 +1,17 @@
+
+<form  [formGroup]="sign"  (submit)="onSign()">
+    <mdc-text-field   autocomplete fullwidth  type="email" formControlName="email">
+      <mdc-icon mdcTextFieldIcon trailing>person</mdc-icon>
+    </mdc-text-field>
+    <!-- <kng-control-messages [control]="sign.controls.email"></kng-control-messages> -->
+    
+    <mdc-text-field  autocomplete fullwidth  type="password" formControlName="password">
+      <mdc-icon mdcTextFieldIcon trailing>vpn_key</mdc-icon>
+    </mdc-text-field>
+    <!-- <kng-control-messages [control]="sign.controls.password"></kng-control-messages> -->
+      
+    <button primary mdc-button unelevated  [disabled]="!sign.valid" class="align-center">
+      <mdc-icon>account_circle</mdc-icon>              
+      <span >Login</span>
+    </button>            
+</form>
