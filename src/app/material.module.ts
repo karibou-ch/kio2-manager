@@ -5,6 +5,7 @@ import {MdcListModule} from '@angular-mdc/web/list';
 import {MdcTypographyModule} from '@angular-mdc/web/typography';
 import {MdcIconModule} from '@angular-mdc/web/icon';
 import {MdcTextFieldModule} from '@angular-mdc/web/textfield';
+import {MdcSnackbarModule} from '@angular-mdc/web/snackbar';
 
 @NgModule({
   exports: [
@@ -13,7 +14,8 @@ import {MdcTextFieldModule} from '@angular-mdc/web/textfield';
     MdcTypographyModule,
     MdcListModule,
     MdcIconModule,
-    MdcTextFieldModule
+    MdcTextFieldModule,
+    MdcSnackbarModule
   ]
 })
 export class MaterialModule {
