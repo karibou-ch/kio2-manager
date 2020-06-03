@@ -2,8 +2,12 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
 import { KngControlMessagesComponent } from './kng-control-messages/control-messages.component';
+import { Kng2CoreModule  } from 'kng2-core';
+
 import { RouterModule } from '@angular/router';
-//import { KngCommonModule } from '../common/common.module';
+// import { KngCommonModule } from '../common/common.module';
+// environnement
+import { environment } from '../../environments/environment';
 
 @NgModule({
   imports: [
@@ -15,6 +19,7 @@ import { RouterModule } from '@angular/router';
     // KngSharedMdcModule,
     // KngCommonModule,
     // RouterModule.forChild(appRoutes),
+    Kng2CoreModule
   ],
   exports: [
     KngControlMessagesComponent,
